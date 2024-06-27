@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkUp</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <section class="chat__section">
+
+    <div class="brand">
+      <img height="40" src="/wassup.png" alt="Brand Logo" />
+      <h1>LinkUp</h1>
+    </div>
+
+    <div class="message__area"></div>
+
+    <div class="input__area">
+      
+      <label for="fileInput" id="attachButton">
+        <img src="/attach.png" alt="Attach" />
+      </label>
+
+      <input type="file" id="fileInput" style="display: none" />
+
+      <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+
+      <button id="emojiButton">
+        <img src="/emoji.png" alt="Emoji" />
+      </button>
+
+      <button id="sendButton">
+        <img src="/send.png" alt="Send" />
+      </button>
+
+    </div>
+
+  </section>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+</body>
+
+</html>
